@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 500 1rem helvetica;
+    border:1px solid black;
+    text-align: center;
+}
+/* estilos compartidos */
+header, .h1-container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:flex-start; 
+    align-content: center;
+    border-color: azure;
+}
+header{
+    height: 400px;
+    background-color: azure;
+    background-image: url(../assets/cool-background.png);
+    background-size: cover;
+    color: white;
+}
+.h1-container{
+    padding:0 20px;
+    width: 400px;
+    height: 200px;
+    justify-content: space-around;
+}
+h3{
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 2rem;
+}
+.data-container{
+    /* display: block; */
+}
+
+
+@media (min-width:300px){
+    header{
+        justify-content: center;
+    }
+}
