@@ -3,16 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     font: 500 1rem helvetica;
-    border:1px solid black;
     text-align: center;
 }
 /* estilos compartidos */
-header, .h1-container{
+header, .h1-container, .data-container{
     display: flex;
     flex-flow: column wrap;
     justify-content:flex-start; 
     align-content: center;
     border-color: azure;
+}
+/* sacando algunos estilos compartidos a un par de elementos */
+h1, h3, h4, span{
+    border: none;
 }
 header{
     height: 400px;
@@ -22,24 +25,86 @@ header{
     color: white;
 }
 .h1-container{
-    padding:0 20px;
-    width: 400px;
-    height: 200px;
-    justify-content: space-around;
+    /* padding:0 20rem; */
+    /* width: 400rem; */
+    height: 14rem;
+    justify-content: space-between;
+    border:1px solid currentColor;
 }
-h3{
+/* h3{
     font-size: 1.5rem;
-}
+} */
 h1{
     font-size: 2rem;
+    font-weight: bold;
 }
-.data-container{
-    /* display: block; */
+.data-label{
+    margin: 0.3rem 0;
+    padding: 0.2rem;
+    width: 12rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: #6c9bc7;
 }
 
+/* nav */
+.inputs-container, .ingresos, .egresos, li{
+    padding: 0.5rem;
+    border:solid 0.1rem #6c9bc7;
+}
+.form-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.form-container label{
+    margin: 0.5rem 0;
+}
 
+/* resumenes de gastos */
+.resumenes{
+    margin: 1rem 0 0;
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: space-around;
+    
+}
+.ingresos{
+
+}
+.egresos{
+
+}
 @media (min-width:300px){
-    header{
-        justify-content: center;
+    *{
+        font-size: 1rem;
     }
+    header{
+        justify-content:space-evenly;
+    }
+    .h1-container{
+    /* height: 12rem; */
+
+    }
+    .data-container{
+        width: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    /* necesita ser row  */
+    .data-label{
+        /* margin: 2rem; */
+        width: auto;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    
 }
