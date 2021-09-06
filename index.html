@@ -13,7 +13,7 @@
     <header>
         <div class="h1-container">
             <h3>Presupuesto disponible</h3>
-            <h1>$20000</h1>
+            <h1 id="budget">$20000</h1>
             <div class="data-container">
                 <div class="data-label">
                     <h4>Ingresos</h4>
@@ -21,7 +21,8 @@
                 </div>
                 <div class="data-label">
                     <h4>Egresos</h4>
-                    <span id="ing" class="data-input">$200</span>
+                    <span id="egr" class="data-input">$200</span>
+                    <span id="percentage"></span>
                 </div>
 
             </div>
@@ -61,7 +62,10 @@
 
 
 
-    <script src="./js/clases.js"></script>
-    <script src=""></script>
+    <script src="./js/clasePadre.js"></script>
+    <script src="./js/clasesHijas/egreso.js"></script>
+    <script src="./js/clasesHijas/ingreso.js"></script>
+    <script src="./js/arrays.js"></script>
+    <script src="./js/globalFunctions.js"></script>
 </body>
 </html>
