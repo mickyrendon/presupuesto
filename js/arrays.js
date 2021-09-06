@@ -1,10 +1,10 @@
 const dataEntry = [
-    new Entry('salario', 2100.00),
-    new Egress('venta coche', 1500)
+    new Entry('salario', 0),
+    new Egress('venta coche', 0)
 ];
 
 const dataEgress = [
-    new Egress('renta',  230.00),
-    new Egress('impuestos',  400.00),
+    new Egress('renta',  0),
+    new Egress('impuestos',  0),
 ];
 
