@@ -4,27 +4,41 @@ document.body.onload = HeaderonLoad;
 function HeaderonLoad(){
     let budget = totalEntry() - totalEgress();
     let percentage = totalEgress() / totalEntry();
-
-    document.getElementById('budget').innerHTML = budget;
-    document.getElementById('percentage').innerHTML = percentage + '%';
+// el encapsulamiento funciona por el return de las funciones currrenncycoin y percentageDigits
+    document.getElementById('budget').innerHTML = `${currencyCoin(budget)}`;
+    document.getElementById('ing').innerHTML = `Ingresos  ${currencyCoin(totalEntry())}`;
+    document.getElementById('egr').innerHTML = `Egresos  ${currencyCoin(totalEgress())} ${percentageDigits(percentage)}`;
 }
 
 const totalEntry = () =>{
     let totalCounter = 0;
+
+    //recorriendo el array dataEntry
     for(let i of dataEntry){
-        //recorriendo el aray dataEntry
         totalCounter += i.value;
     }
     return totalCounter;
 }
 const totalEgress = () =>{
     let totalCounter = 0;
+    //recorriendo el array dataEgress
     for(let i of dataEgress){
-        //recorriendo el aray dataEntry
         totalCounter += i.value;
     }
     return totalCounter;
 }
 
-// calculos
-// let 
+//moneda
+const currencyCoin = (val) => {
+    return val.toLocaleString('es-AR', {
+        style:'currency',
+        currency:'ARS',
+        minimumFractionDigits: 2
+    })
+}
+const percentageDigits = (val) => {
+    return val.toLocaleString('es-AR', {
+        style:'percent',
+        minimumFractionDigits: 2
+    })
+}
