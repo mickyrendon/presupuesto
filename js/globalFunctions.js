@@ -4,7 +4,7 @@ document.body.onload = HeaderonLoad;
 function HeaderonLoad(){
     let budget = totalEntry() - totalEgress();
     let percentage = totalEgress() / totalEntry();
-// el encapsulamiento funciona por el return de las funciones currrenncycoin y percentageDigits
+// el encapsulamiento funciona por el return de las funciones currrenncycoin y percentageDigits  
     document.getElementById('budget').innerHTML = `${currencyCoin(budget)}`;
     document.getElementById('ing').innerHTML = `Ingresos  ${currencyCoin(totalEntry())}`;
     document.getElementById('egr').innerHTML = `Egresos  ${currencyCoin(totalEgress())} ${percentageDigits(percentage)}`;
