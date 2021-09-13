@@ -6,6 +6,9 @@
     text-align: center;
 }
 /* estilos compartidos */
+main, header{
+    /* padding:0 8rem; */
+}
 header, .h1-container, .data-container{
     display: flex;
     flex-flow: column wrap;
@@ -19,6 +22,7 @@ h1, h3, h4, span{
 }
 header{
     height: 400px;
+    justify-content: center;
     background-color: azure;
     background-image: url(../assets/cool-background.png);
     background-size: cover;
@@ -35,7 +39,7 @@ header{
     font-size: 1.5rem;
 } */
 h1{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 .data-label{
@@ -76,9 +80,13 @@ h1{
 .egresos{
 
 }
-@media (min-width:300px){
+
+@media screen and (min-width:400px){
     *{
         font-size: 1rem;
+    }
+    main, header{
+        padding:0;
     }
     header{
         justify-content:space-evenly;
@@ -108,5 +116,11 @@ h1{
     }
     .resumenes{
         flex-flow: row wrap;
+    }
+}
+
+@media (min-width:720px) {
+    main, header{
+        padding:0 8rem;
     }
 }
