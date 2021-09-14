@@ -22,7 +22,7 @@ const createEntry = (value) => {
                 <label for="numero">
                     <input id="numero" type="text" value="${currencyCoin(value.value)}">
                 </label>
-                <span class="close">x</span>
+                <button class="close">x</button>
             </div>
         </li> `;
         return newBlock;
