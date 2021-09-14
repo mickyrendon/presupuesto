@@ -23,7 +23,7 @@ const createEgress = (value) => {
                     <input id="numero" type="text" value="${currencyCoin(value.value)}">
                 </label>
                 <span class="percentage">${percentageDigits(value.value/totalEgress())}</span>
-                <span class="close">x</span>
+                <button class="close">x</button>
             </div>
         </li>`;
 
