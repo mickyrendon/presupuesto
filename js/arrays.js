@@ -1,11 +1,11 @@
 // la constante no se puede modificar, lo que es varible aca son los arrays
 const dataEntry = [
     new Entry('salario', 100),
-    new Egress('venta coche', 4000)
+    new Entry('venta coche', 4000)
 ];
 
 const dataEgress = [
     new Egress('renta',  2000),
-    new Egress('impuestos',  230),
+    new Egress('impuestos',  20)
 ];
 
