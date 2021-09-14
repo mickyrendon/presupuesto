@@ -27,7 +27,7 @@
     </header>
     <main>
         <section class="inputs-container">
-            <form action="" class="form-container">
+            <form action="" class="form-container" onsubmit="false">
                 <label for="">
                     <input type="text">
                 </label>
@@ -41,19 +41,7 @@
         </section>
         <section class="resumenes">
             <div class="ingresos">
-                <ol>Ingresos
-                    <li>
-                        <div class="container">
-                            <label for="texto">
-                                <input id="texto" type="text">
-                            </label>    
-                            <label for="numero">
-                                <input id="numero" type="text">
-                            </label>
-                            <span>%</span>
-                            <span>x</span>
-                        </div>
-                    </li>
+                <ol id="entry-list">Ingresos    
                 </ol>
             </div>
             <div class="egresos">
@@ -81,6 +69,7 @@
     <script src="./js/clasesHijas/egreso.js"></script>
     <script src="./js/clasesHijas/ingreso.js"></script>
     <script src="./js/arrays.js"></script>
+    <script src="./js/ingresosDinamicos.js"></script>
     <script src="./js/globalFunctions.js"></script>
 </body>
 </html>

@@ -8,6 +8,9 @@ function HeaderonLoad(){
     document.getElementById('budget').innerHTML = `${currencyCoin(budget)}`;
     document.getElementById('ing').innerHTML = `Ingresos  ${currencyCoin(totalEntry())}`;
     document.getElementById('egr').innerHTML = `Egresos  ${currencyCoin(totalEgress())} ${percentageDigits(percentage)}`;
+
+// invocando a la funcion running data del script ingresos Dinamicos
+    runningDataEntry();
 }
 
 const totalEntry = () =>{
