@@ -2,13 +2,13 @@
 
 // rocorriendo el array dataEntry
 const runningDataEntry = () => {
-    let EntryVal = '';
+    let entryVal = '';
 
     for (let value of dataEntry) {
-        EntryVal += createEntry(value);
+        entryVal += createEntry(value);
     }
     //agregando el contenido creado a la lista <ol> de ingresos
-    document.getElementById('entry-list').innerHTML = `Ingresos ${EntryVal}`;
+    document.getElementById('entry-list').innerHTML = `Ingresos ${entryVal}`;
 }
 
 // creando el contenido html y asignando valores
