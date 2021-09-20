@@ -27,16 +27,18 @@
     </header>
     <main>
         <section class="inputs-container">
-            <form action="" class="form-container" onsubmit="false">
-                <label for="">
-                    <input type="text">
+            <form class="form-container" name="new-item" onsubmit="false">
+                <select name="acciones" id="selector">
+                    <option class="entrys" value="ingreso" selected> +</option>
+                    <option class="egress" value="egreso">-</option>
+                </select>
+                <label>
+                    <input id="input-description" class="input-description" type="text" name="Descripción" placeholder="Descripción">
                 </label>
-                <label for="">
-                    <input type="text">
+                <label>
+                    <input id="input-number" class="input-number" type="number" name="valor" step="any">
                 </label>
-                <label for="">
-                    <input type="text">
-                </label>
+                <input id="btn-add" class="btn-add" type="button" value="Agregar">
             </form>
         </section>
         <section class="resumenes">
@@ -60,6 +62,6 @@
     <script src="./js/ingresosDinamicos.js"></script>
     <script src="./js/egresosDinamicos.js"></script>
     <script src="./js/globalFunctions.js"></script>
-    <script src="./js/close.js"></script>
+    <script src="./js/addData.js"></script>
 </body>
 </html>
