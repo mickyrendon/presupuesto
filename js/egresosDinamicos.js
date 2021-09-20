@@ -15,7 +15,7 @@ const runningDataEgress = () => {
 const createEgress = (value) => {
      let newBlock = `
         <li>
-            <div class="container">
+            <div class="egress-container">
                 <label for="texto">
                     <input id="texto" type="text" value="${value.description}">
                 </label>    
@@ -23,9 +23,32 @@ const createEgress = (value) => {
                     <input id="numero" type="text" value="${currencyCoin(value.value)}">
                 </label>
                 <span class="percentage">${percentageDigits(value.value/totalEgress())}</span>
-                <button class="close">x</button>
+                <button class="close" onclick="getCloseBtn(${value.id})">x</button>
             </div>
         </li>`;
 
         return newBlock;
 }
+
+// eliminando ingresos
+const getCloseBtn = (id) => {
+    let index = dataEgress.findIndex(egr => egr.id === id);
+    dataEgress.splice(index, 1);
+    
+    HeaderonLoad();
+    runningDataEgress();
+
+    return console.log('clickeando el btn ' + index);
+}
+
+
+// codigo para el futuro y cambiar el onclick por addEventListener
+/* function loop(){
+    var elemento = document.querySelectorAll('.egress-container > .close');
+    elemento.forEach(element => {
+        element.addEventListener('click', getCloseBtn, true );
+        console.log('elementeado');
+    }) 
+
+    return elemento;
+} */

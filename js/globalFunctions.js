@@ -12,7 +12,6 @@ function HeaderonLoad(){
 // invocando a la funcion running data del script ingresos Dinamicos
     runningDataEntry();
     runningDataEgress();
-    close();
 }
 
 const totalEntry = () =>{
