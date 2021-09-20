@@ -15,15 +15,25 @@ const runningDataEntry = () => {
 const createEntry = (value) => {
      let newBlock = `
         <li>
-            <div class="container">
+            <div class="entry-container">
                 <label for="texto">
                     <input id="texto" type="text" value="${value.description}">
                 </label>    
                 <label for="numero">
                     <input id="numero" type="text" value="${currencyCoin(value.value)}">
                 </label>
-                <button class="close">x</button>
+                <button class="close" onclick="getCloseBtnEntry(${value.id})">x</button>
             </div>
         </li> `;
         return newBlock;
+}
+
+const getCloseBtnEntry = (id) => {
+    let index = dataEntry.findIndex(ingr => ingr.id === id);
+    dataEntry.splice(index, 1);
+    
+    HeaderonLoad();
+    runningDataEntry();
+
+    return console.log('clickeando el btn ' + index);
 }
