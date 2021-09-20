@@ -12,6 +12,7 @@ function HeaderonLoad(){
 // invocando a la funcion running data del script ingresos Dinamicos
     runningDataEntry();
     runningDataEgress();
+    readOnly()
 }
 
 const totalEntry = () =>{
@@ -46,3 +47,19 @@ const percentageDigits = (val) => {
         minimumFractionDigits: 2
     })
 }
+
+const readOnly = () => {
+    // mejorar la funcion para que el forEach no se repita y se pueda aplicar a los elementos
+    let element1 = document.querySelectorAll('.entry-container > label > input');
+    let element2 = document.querySelectorAll('.egress-container > label > input');
+    
+    element1.forEach(element => {
+        element.setAttribute('readonly', true);
+        element.style.outline = 'none';
+    }) ;
+    element2.forEach(element => {
+        element.setAttribute('readonly', true);
+        element.style.outline = 'none';
+
+    }) ;
+};
