@@ -6,10 +6,10 @@ const runningDataEgress = () => {
 
     for (let value of dataEgress) {
         egressVal += createEgress(value);
-    }
+    };
     //agregando el contenido creado a la lista <ol> de ingresos
     document.getElementById('egress-list').innerHTML = `Egresos ${egressVal}`;
-}
+};
 
 // creando el contenido html y asignando valores
 const createEgress = (value) => {
@@ -28,7 +28,7 @@ const createEgress = (value) => {
         </li>`;
 
         return newBlock;
-}
+};
 
 // eliminando ingresos
 const getCloseBtn = (id) => {
@@ -39,16 +39,4 @@ const getCloseBtn = (id) => {
     runningDataEgress();
 
     return console.log('clickeando el btn ' + index);
-}
-
-
-// codigo para el futuro y cambiar el onclick por addEventListener
-/* function loop(){
-    var elemento = document.querySelectorAll('.egress-container > .close');
-    elemento.forEach(element => {
-        element.addEventListener('click', getCloseBtn, true );
-        console.log('elementeado');
-    }) 
-
-    return elemento;
-} */
+};
