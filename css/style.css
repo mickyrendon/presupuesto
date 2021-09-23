@@ -11,6 +11,13 @@ input, select{
     margin: 0.5rem;
     padding: 5px;
 }
+ol{
+    line-height: 3;
+    list-style: none;
+}
+li{
+    margin: 0.5rem;
+}
 header, .h1-container, .data-container{
     display: flex;
     flex-flow: column wrap;
@@ -85,13 +92,12 @@ h1{
     display: flex;
     flex-flow:column wrap;
     justify-content: space-around;
-    
+    background-color: rgba(231, 220, 241, 0.911);
 }
 .ingresos{
-
+    margin: 2rem 0;
 }
 .egresos{
-
 }
 
 @media screen and (min-width:400px){
