@@ -15,6 +15,7 @@ const runningDataEgress = () => {
 const createEgress = (value) => {
      let newBlock = `
         <li>
+            <button class="close" onclick="getCloseBtn(${value.id})"><i class="bi bi-x-circle"></i></button>
             <div class="egress-container">
                 <label for="texto">
                     <input id="texto" type="text" value="${value.description}">
@@ -23,7 +24,6 @@ const createEgress = (value) => {
                     <input id="numero" type="text" value="${currencyCoin(value.value)}">
                 </label>
                 <span class="percentage">${percentageDigits(value.value/totalEgress())}</span>
-                <button class="close" onclick="getCloseBtn(${value.id})">x</button>
             </div>
         </li>`;
 
