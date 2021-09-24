@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: 500 1rem helvetica;
+    font: 500 1rem arial;
     text-align: center;
 }
 /* estilos compartidos */
@@ -12,8 +12,11 @@ input, select{
     padding: 5px;
 }
 ol{
-    line-height: 3;
+    font-size: 1.5rem;
+    font-weight:lighter;
+    line-height: 2;
     list-style: none;
+    color: tomato;
 }
 li{
     margin: 0.5rem;
@@ -108,7 +111,28 @@ h1{
 .ingresos{
     margin: 2rem 0;
 }
-.egresos{
+
+.ingresos, .egresos{
+    padding: 0;
+}
+.ingresos .numero, .egresos .numero{
+    background-color: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.ingresos .numero{
+    color:#36c897;
+}
+.ingresos .numero, .egresos .numero, .percentage{
+    font-weight:600;
+}
+.egresos .numero{
+    color:tomato;
+}
+.percentage{
+    padding: 0.2rem;
+    background-color:#eb363633;
 }
 
 @media screen and (min-width:400px){
@@ -146,6 +170,9 @@ h1{
     }
     .resumenes{
         flex-flow: row wrap;
+    }
+    .ingresos, .egresos{
+        padding: 0.5rem;
     }
 }
 
