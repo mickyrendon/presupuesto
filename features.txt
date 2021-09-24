@@ -1,3 +1,0 @@
-TODO:metas
-    -responsive < 300, < 720, > 720;
-    -codigo js
