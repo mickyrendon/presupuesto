@@ -17,6 +17,10 @@ ol{
 }
 li{
     margin: 0.5rem;
+    text-align: end;
+}
+.close{
+    /* width:2rem; */
 }
 header, .h1-container, .data-container{
     display: flex;
