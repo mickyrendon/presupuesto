@@ -15,6 +15,7 @@ const runningDataEntry = () => {
 const createEntry = (value) => {
      let newBlock = `
         <li>
+            <button class="close" onclick="getCloseBtnEntry(${value.id})"><i class="bi bi-x-circle"></i></button>
             <div class="entry-container">
                 <label for="texto">
                     <input id="texto" type="text" value="${value.description}">
@@ -22,7 +23,6 @@ const createEntry = (value) => {
                 <label for="numero">
                     <input id="numero" type="text" value="${currencyCoin(value.value)}">
                 </label>
-                <button class="close" onclick="getCloseBtnEntry(${value.id})">x</button>
             </div>
         </li> `;
         return newBlock;

@@ -6,8 +6,21 @@
     text-align: center;
 }
 /* estilos compartidos */
-main, header{
-    /* padding:0 8rem; */
+input, select{
+    width: 14rem; 
+    margin: 0.5rem;
+    padding: 5px;
+}
+ol{
+    line-height: 3;
+    list-style: none;
+}
+li{
+    margin: 0.5rem;
+    text-align: end;
+}
+.close{
+    /* width:2rem; */
 }
 header, .h1-container, .data-container{
     display: flex;
@@ -20,6 +33,10 @@ header, .h1-container, .data-container{
 h1, h3, h4, span{
     border: none;
 }
+h1{
+    -webkit-text-stroke: 1.5px #9189ba;
+}
+
 header{
     height: 400px;
     justify-content: center;
@@ -39,16 +56,23 @@ header{
     font-size: 1.5rem;
 } */
 h1{
-    font-size: 3rem;
+    font-size: 3.9rem;
     font-weight: bold;
+    
+}
+.data-input{
+    padding: 0 0.5rem;
+    height: 30px;
+    display: flex;
+    align-items: center;
 }
 .data-label{
     margin: 0.3rem 0;
     padding: 0.2rem;
-    width: 12rem;
+    /* width: 12rem; */
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content:flex-start;
     background-color: #6c9bc7;
 }
 
@@ -72,13 +96,12 @@ h1{
     display: flex;
     flex-flow:column wrap;
     justify-content: space-around;
-    
+    background-color: rgba(231, 220, 241, 0.911);
 }
 .ingresos{
-
+    margin: 2rem 0;
 }
 .egresos{
-
 }
 
 @media screen and (min-width:400px){
