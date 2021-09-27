@@ -106,7 +106,7 @@ h1{
     display: flex;
     flex-flow:column wrap;
     justify-content: space-around;
-    background-color: rgba(231, 220, 241, 0.911);
+    background-color: rgba(231, 220, 241, 0.438);
 }
 .ingresos{
     margin: 2rem 0;
@@ -115,11 +115,15 @@ h1{
 .ingresos, .egresos{
     padding: 0;
 }
+.input-text{
+    background:none;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
 .ingresos .numero, .egresos .numero{
     background-color: none;
     background: none;
     border: none;
-    border-bottom: 1px solid black;
 }
 .ingresos .numero{
     color:#36c897;
