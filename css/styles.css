@@ -131,7 +131,10 @@ h1{
 .ingresos .numero, .egresos .numero, .percentage{
     font-weight:600;
 }
+/* modificar este tamano para los otros mediaqueries y asi quedar todo en una sola linea */
 .egresos .numero{
+    width: 8rem;
+    text-align: start;
     color:tomato;
 }
 .percentage{
