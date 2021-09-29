@@ -21,11 +21,16 @@ ol{
 li{
     margin: 0.5rem;
     text-align: end;
+    background-color: rgba(250, 250, 210, 0.205);
 }
 .close{
     /* width:2rem; */
     border: none;
     background-color:transparent;
+    color: rgb(85, 139, 209);
+}
+.close:hover{
+    color: tomato;
 }
 /* poner un hover y efecto */
 /* probando si se a hecho push en el github */
@@ -106,14 +111,17 @@ h1{
     display: flex;
     flex-flow:column wrap;
     justify-content: space-around;
-    background-color: rgba(231, 220, 241, 0.438);
+    /* background-color: rgba(231, 220, 241, 0.438); */
 }
 .ingresos{
     margin: 2rem 0;
 }
-
+.egresos{
+    margin-bottom: 2rem;
+}
 .ingresos, .egresos{
     padding: 0;
+    background-color: rgba(176, 196, 222, 0.116);
 }
 .input-text{
     background:none;
