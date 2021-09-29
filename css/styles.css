@@ -67,9 +67,9 @@ header{
     justify-content: space-between;
     border:1px solid currentColor;
 }
-/* h3{
-    font-size: 1.5rem;
-} */
+h3, .data-input{
+    font-weight: 700;
+}
 h1{
     font-size: 3.9rem;
     font-weight: bold;
@@ -84,11 +84,10 @@ h1{
 .data-label{
     margin: 0.3rem 0;
     padding: 0.2rem;
-    /* width: 12rem; */
     display: flex;
     flex-flow: row wrap;
     justify-content:flex-start;
-    background-color: #6c9bc7;
+    border: 1px solid #6056c960;
 }
 
 /* nav */
