@@ -42,12 +42,15 @@ const currencyCoin = (val) => {
     })
 }
 const percentageDigits = (val) => {
+    if(isNaN(val)){
+        val.innerHTML = '0';
+        console.log('invalido');
+    }
     return val.toLocaleString('es-AR', {
         style:'percent',
         minimumFractionDigits: 2
     })
 }
-
 const readOnly = () => {
     // mejorar la funcion para que el forEach no se repita y se pueda aplicar a los elementos
     let element1 = document.querySelectorAll('.entry-container > label > input');
