@@ -8,7 +8,6 @@
 /* estilos compartidos */
 input, select{
     width: 14rem; 
-    /* width: 8rem;  */
     height: 32px;
     margin: 0.5rem;
     padding: 5px;
@@ -26,7 +25,6 @@ li{
     background-color: rgba(250, 250, 210, 0.205);
 }
 .close{
-    /* width:2rem; */
     border: none;
     background-color:transparent;
     color: rgb(85, 139, 209);
@@ -34,8 +32,6 @@ li{
 .close:hover{
     color: tomato;
 }
-/* poner un hover y efecto */
-/* probando si se a hecho push en el github */
 .close i{
     font-size: 1.2rem;
 }
@@ -63,9 +59,7 @@ header{
     color: white;
 }
 .h1-container{
-    /* padding:0 20rem; */
-    /* width: 400rem; */
-    /* height: 14rem; */
+    padding:1rem;
     justify-content: space-between;
     border:1px solid currentColor;
 }
@@ -91,7 +85,6 @@ h1{
     justify-content:flex-start;
     border: 1px solid #6056c960;
 }
-
 /* nav */
 .inputs-container, .ingresos, .egresos, li{
     padding: 0.5rem;
@@ -111,10 +104,6 @@ h1{
     flex-flow: row wrap;
     justify-content: space-around;
 }
-.form-container label{
-    /* margin: 0.5rem 0; */
-}
-
 /* resumenes de gastos */
 .resumenes{
     margin: 1rem 0 0;
@@ -170,10 +159,6 @@ h1{
     }
     header{
         justify-content:space-evenly;
-    }
-    .h1-container{
-    /* height: 12rem; */
-
     }
     .data-container{
         width: auto;
