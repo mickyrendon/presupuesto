@@ -8,6 +8,8 @@
 /* estilos compartidos */
 input, select{
     width: 14rem; 
+    /* width: 8rem;  */
+    height: 32px;
     margin: 0.5rem;
     padding: 5px;
 }
@@ -63,7 +65,7 @@ header{
 .h1-container{
     /* padding:0 20rem; */
     /* width: 400rem; */
-    height: 14rem;
+    /* height: 14rem; */
     justify-content: space-between;
     border:1px solid currentColor;
 }
@@ -95,13 +97,22 @@ h1{
     padding: 0.5rem;
     border:solid 0.1rem #6c9bc7;
 }
+.btn-add{
+    background: #0202f5ce;
+    color: rgb(255, 251, 251);
+    border: none;
+}
+.btn-add:hover{
+    background: #0202f5c5;
+    border: 1px solid rgba(0, 0, 0, 0.808);
+}
 .form-container{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 .form-container label{
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
 }
 
 /* resumenes de gastos */
@@ -119,6 +130,7 @@ h1{
     margin-bottom: 2rem;
 }
 .ingresos, .egresos{
+    min-width: 18rem;
     padding: 0;
     background-color: rgba(176, 196, 222, 0.116);
 }
@@ -149,7 +161,7 @@ h1{
     background-color:#eb363633;
 }
 
-@media screen and (min-width:400px){
+@media screen and (min-width:320px){
     *{
         font-size: 1rem;
     }
@@ -182,16 +194,31 @@ h1{
     h1{
         font-size: 6rem;
     }
+    input, select{
+        width: 10rem; 
+    }
+
     .resumenes{
         flex-flow: row wrap;
     }
     .ingresos, .egresos{
+        margin: 2rem;
         padding: 0.5rem;
+        width: 28rem;
     }
 }
 
-@media (min-width:720px) {
+@media (min-width:720px)
+and (max-width:1200px){
     main, header{
-        padding:0 8rem;
+        padding:0rem;
+    }
+    .ingresos, .egresos{
+        margin: 2rem 0;
+    }
+}
+@media (min-width:1200px){
+    main, header{
+        padding: 0 10rem;
     }
 }
