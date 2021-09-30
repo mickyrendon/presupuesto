@@ -42,8 +42,9 @@ const currencyCoin = (val) => {
     })
 }
 const percentageDigits = (val) => {
+    //si el valor es NaN mostrar 0
     if(isNaN(val)){
-        val.innerHTML = '0';
+        val = 0;
         console.log('invalido');
     }
     return val.toLocaleString('es-AR', {
