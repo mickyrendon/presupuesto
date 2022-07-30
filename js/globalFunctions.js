@@ -49,7 +49,7 @@ const percentageDigits = (val) => {
     }
     return val.toLocaleString('es-AR', {
         style:'percent',
-        minimumFractionDigits: 2
+        minimumFractionDigits: 0
     })
 }
 const readOnly = () => {

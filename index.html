@@ -30,16 +30,16 @@
     <main>
         <section class="inputs-container">
             <form class="form-container" name="new-item" onsubmit="false">
-                <select name="acciones" id="selector">
-                    <option class="entrys" value="ingreso" selected>Ingreso</option>
-                    <option class="egress" value="egreso">Egreso</option>
-                </select>
                 <label>
                     <input id="input-description" class="input-description" type="text" name="Descripción" placeholder="Descripción">
                 </label>
                 <label>
                     <input id="input-number" class="input-number" type="number" name="valor" step="any" placeholder="0.00">
                 </label>
+                <select name="acciones" id="selector">
+                    <option class="entrys" value="ingreso" selected>Ingreso</option>
+                    <option class="egress" value="egreso">Egreso</option>
+                </select>
                 <input id="btn-add" class="btn-add" type="button" value="Agregar">
             </form>
         </section>

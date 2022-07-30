@@ -1,3 +1,7 @@
 TODO:metas
-    -responsive < 300, < 720, > 720;
-    -codigo js
+    -guardar en un array las combinaciones de los paises para luego modificar el codigo dependiendo de lo opcion que el usuario elija y asi tener el boton de moneda
+    -verificar la veracidad del porcentaje
+    -cambiar el onclick de los botones 'close' por addEventListener
+    -agregar un alert al boton borrar de la listas de secciones
+    -iterar al dar enter en la seccion de crear un nuevo elemento
+    -usar localStorage para guardar lo agregado
