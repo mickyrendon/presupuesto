@@ -140,6 +140,7 @@ select:hover{
     justify-content: space-around;
 }
 main{
+    padding-top: 5vh;
     background-color: #3c6ca8;
 }
 /* resumenes de gastos */
@@ -148,7 +149,7 @@ main{
     text-align: start;
 }
 .resumenes{
-    margin: 1rem 0 0;
+    margin: 0;
     display: flex;
     flex-flow:column wrap;
     align-content: center;
@@ -187,7 +188,6 @@ main{
 .ingresos .numero, .egresos .numero, .percentage{
     font-weight:600;
 }
-/* modificar este tamano para los otros mediaqueries y asi quedar todo en una sola linea */
 .egresos .numero{
     width: 38vw;
     text-align: start;
@@ -212,14 +212,14 @@ main{
     width: 15vw;
 }
 @media  screen and  (min-width:769px) {
-    header{
+    /* header{
         padding-bottom: 20vh;
-    }
+    } */
     .data-input{
         margin: 1rem 0;
     }
     main{
-        padding-top: 20vh;
+        padding-top: 10vh;
         display: flex;
         align-items: center ;
         flex-flow: column nowrap;
@@ -229,10 +229,13 @@ main{
         max-width: 90vw;
     }
     .inputs-container{
-        position: absolute;
-        top: 75vh;
+        margin: 0 auto;
+        position: relative;
+        /* position:sticky; */
+        top: 5vh;
     }
     .resumenes{
+        margin-bottom: 0;
         width: 90vw;
         flex-flow: row wrap;
         justify-content: space-between;
