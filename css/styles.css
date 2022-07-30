@@ -173,9 +173,11 @@ main{
 .input-text{
     text-align: start;
 }
-.input-text, ol li{
+.input-text{
     background:none;
     border: none;
+}
+li{
     border-bottom: 1px solid lightgray;
 }
 .ingresos .numero, .egresos .numero{
