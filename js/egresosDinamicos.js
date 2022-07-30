@@ -18,10 +18,10 @@ const createEgress = (value) => {
             <button class="close" onclick="getCloseBtn(${value.id})"><i class="bi bi-x-circle"></i></button>
             <div class="egress-container">
                 <label for="texto">
-                    <input id="texto" class="input-text" type="text" value="${value.description}">
+                    <input id="texto" class="input-text" type="text" value="${value.description}" readonly>
                 </label>    
                 <label for="numero">
-                    <input id="numero" class="numero" type="text" value="${currencyCoin(value.value)}">
+                    <input id="numero" class="numero" type="text" value="${currencyCoin(value.value)}" readonly>
                 </label>
                 <span class="percentage">${percentageDigits(value.value/totalEgress())}</span>
             </div>
