@@ -15,7 +15,8 @@
             HeaderonLoad();
             runningDataEgress();
          };
-     }
+        }
+        return formulario.reset();
  };
 
 document.getElementById('btn-add').addEventListener('click', addData, true);
